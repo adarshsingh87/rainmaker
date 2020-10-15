@@ -560,3 +560,196 @@ nav {
 		padding: 10px;
 	}
 }
+
+/* !pen footer */
+
+.pen-title {
+	font-family: 'DM Serif Display';
+	font-size: 40px;
+	line-height: 130%;
+	text-align: center;
+	color: #1c4670;
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+
+.pen-info {
+	font-family: 'DM Sans';
+	font-size: 18px;
+	line-height: 130%;
+	text-align: center;
+	color: #505050;
+	margin-bottom: 40px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 960px) {
+	.pen-title {
+		font-size: 30px;
+	}
+	.pen-info {
+		font-size: 14px;
+		width: 100%;
+	}
+}
+
+/* ! footer */
+
+.footer {
+	padding: 90px 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-links img {
+	margin-right: 15px;
+}
+
+#Data_Engineering img {
+	height: 300px;
+	width: auto;
+	max-width: 100%;
+}
+
+#Big_Data {
+	padding: 30px;
+}
+
+#Big_Data img {
+	height: 200px;
+	width: auto;
+	max-width: 100%;
+}
+
+#Model_Deployment {
+	padding: 30px;
+}
+
+#Model_Deployment img {
+	height: 200px;
+	width: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+#Analytic_Tools {
+	padding: 30px;
+}
+
+#Analytic_Tools img {
+	height: 150px;
+	width: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+#Visualisation {
+	padding: 30px;
+}
+
+#Visualisation img {
+	height: 150px;
+	width: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+#Data_Base {
+	padding: 30px;
+}
+
+#Data_Base img {
+	height: 150px;
+	width: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+#Language {
+	padding: 30px;
+}
+
+#Language img {
+	height: 150px;
+	width: auto;
+	max-width: 100%;
+	margin: 20px;
+}
+
+@media screen and (max-width: 650px) {
+	.footer {
+		display: block;
+	}
+	#Data_Engineering img {
+		height: 100px;
+		width: auto;
+		max-width: 100%;
+	}
+	#Big_Data {
+		padding: 10px;
+	}
+	#Big_Data img {
+		height: 80px;
+		width: auto;
+		max-width: 100%;
+	}
+	#Model_Deployment {
+		padding: 10px;
+	}
+	#Model_Deployment img {
+		height: 75px;
+		width: auto;
+		max-width: 100%;
+		margin: 10px;
+	}
+	#Analytic_Tools {
+		padding: 5px;
+	}
+	#Analytic_Tools img {
+		height: 75px;
+		width: auto;
+		max-width: 100%;
+		margin: 5px;
+	}
+	#Visualisation {
+		padding: 5px;
+	}
+	#Visualisation img {
+		height: 75px;
+		width: auto;
+		max-width: 100%;
+		margin: 5px;
+	}
+	#Data_Base {
+		padding: 5px;
+	}
+	#Data_Base img {
+		height: 75px;
+		width: auto;
+		max-width: 100%;
+		margin: 5px;
+	}
+	#Language {
+		padding: 5px;
+	}
+	#Language img {
+		height: 75px;
+		width: auto;
+		max-width: 100%;
+		margin: 5px;
+	}
+}
