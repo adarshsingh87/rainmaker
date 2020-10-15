@@ -331,6 +331,7 @@ nav {
 	.solutions-btn {
 		padding: 10px 40px;
 		font-size: 28px;
+		margin: 0 auto;
 		margin-bottom: 40px;
 	}
 }
