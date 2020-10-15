@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+html,
+body {
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	font-family: 'DM Sans';
+}
+
+button {
+	background: #2f80ed;
+	color: white;
+	border: none;
+	cursor: pointer;
+}
+
+.container-nav {
+	width: 85%;
+	margin: 0 auto;
+}
+/* ! navbar  */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 8vh;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+	margin: 0;
+}
+
+.nav-links li {
+	list-style: none;
+	height: 8vh;
+	padding: 5px 20px;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.nav-links a {
+	text-decoration: none;
+	font-size: 15px;
+	color: #000;
+}
+
+/* ! burger */
+
+.burger {
+	display: none;
+}
+
+.line1 {
+	width: 20px;
+	height: 3px;
+	background-color: #000;
+	margin: 2.5px;
+	transition: all 0.3s ease;
+}
+
+.line2 {
+	width: 14px;
+	height: 3px;
+	background-color: #000;
+	float: right;
+	margin: 2.5px;
+	transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px) {
+	body {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		width: 100%;
+		top: 8vh;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+		z-index: 1000;
+	}
+	.nav-links li {
+		opacity: 0;
+	}
+	.burger {
+		display: block;
+	}
+	.container-nav {
+		width: 95%;
+		margin: 0 auto;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+.contact-us {
+	padding: 5px 15px;
+	border: 1px solid #2f80ed;
+	box-sizing: border-box;
+	border-radius: 16px;
+	color: #2f80ed;
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-2.5px, 3px);
+}
+.toggle .line2 {
+	width: 20px;
+	transform: rotate(45deg) translate(-2.5px, -3px);
+}
+
+/* !content */
+
+.container-main {
+	width: 90%;
+	margin: auto;
+}
+
+.row,
+.left-row {
+	display: flex;
+}
+
+.col {
+	width: 50%;
+}
+
+/* !splash */
+
+.splash {
+	margin: 100px 0;
+}
+
+.splash-img {
+	width: 100%;
+	height: auto;
+}
+
+.splash-title {
+	font-family: 'DM Serif Display';
+	font-size: 48px;
+	line-height: 130%;
+	color: #1c4670;
+}
+
+.get-started-btn {
+	padding: 20px 70px;
+	border-radius: 32px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 130%;
+	cursor: pointer;
+	margin: 60px 0;
+}
+
+/* ! stylish heading */
+
+.heading {
+	display: flex;
+	justify-content: center;
+}
+
+.heading-text {
+	font-family: 'DM Serif Display';
+	font-size: 40px;
+	line-height: 40px;
+	color: #2f80ed;
+	box-shadow: inset 0 -16px 0 0 #fff555;
+	padding: 0 5px;
+}
+
+/* ! mission  */
+
+.mission {
+	font-family: 'DM Serif Display';
+	font-size: 28px;
+	line-height: 130%;
+	text-align: center;
+	color: #36589d;
+	margin: 32px 0;
+	margin-bottom: 100px;
+}
+
+/* ! services */
+.services {
+	margin: 40px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.services-card {
+	width: 400px;
+	height: 400px;
+	box-sizing: border-box;
+	border: 2px solid #bdbdbd;
+	border-radius: 16px;
+	padding: 30px 27px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	background-color: #fff;
+}
+
+.services-card:hover {
+	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
+}
+
+.service-card-img {
+	height: 120px;
+}
+
+.services-card-title {
+	font-family: 'DM Serif Display';
+	font-size: 28px;
+	line-height: 130%;
+	text-align: center;
+	color: #1c4670;
+	margin: 16px;
+}
+
+.services-card-info {
+	font-family: 'DM Sans';
+	font-size: 18px;
+	line-height: 150%;
+	text-align: center;
+}
+
+.center-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.solutions-btn {
+	margin: 40px auto;
+	padding: 20px 100px;
+	font-family: 'DM Serif Display';
+	font-size: 40px;
+	line-height: 130%;
+	box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+	border-radius: 45px;
+}
+
+@media screen and (max-width: 420px) {
+	.services-card {
+		padding: 10px;
+		height: auto;
+		width: 100%;
+	}
+	.services-card-title {
+		font-size: 24px;
+	}
+	.services-card-info {
+		font-size: 14px;
+	}
+	.solutions-btn {
+		padding: 15px 50px;
+		font-size: 36px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.container-main {
+		width: 95%;
+	}
+	.row {
+		flex-direction: column-reverse;
+	}
+	.left-row {
+		flex-direction: column;
+	}
+	.col {
+		width: 100%;
+	}
+	.splash {
+		margin: 20px 0;
+	}
+	.splash-text {
+		padding-top: 20px;
+	}
+	.splash-title {
+		font-size: 27px;
+	}
+	.get-started-btn {
+		padding: 10px 30px;
+		margin: 20px 0;
+		font-size: 14px;
+	}
+	.heading-text {
+		font-size: 32px;
+	}
+	.mission {
+		font-size: 20px;
+		margin: 16px 0;
+		margin-bottom: 40px;
+	}
+	.solutions-btn {
+		margin: 20px;
+	}
+}
+
+/* ! solutions */
+
+.solutions {
+	padding: 50px 0;
+}
+
+.sols-cont {
+	background: #ffffff;
+	border: 1px solid #bdbdbd;
+	box-sizing: border-box;
+	border-radius: 16px;
+	margin: 100px 0;
+}
+
+.sols-cont:hover {
+	box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.16);
+}
+
+.sols-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 16px;
+}
+
+.sols-text-right {
+	padding: 30px;
+	padding-left: 50px;
+	padding-right: 200px;
+}
+
+.sols-text-left {
+	padding: 30px;
+	padding-right: 200px;
+}
+
+.sols-title {
+	font-family: 'DM Serif Display';
+	font-size: 34px;
+	line-height: 130%;
+	color: #1c4670;
+}
+
+.sols-info {
+	font-family: 'DM Sans';
+	font-size: 20px;
+	line-height: 26px;
+	margin: 30px 0;
+}
+
+.read-more-btn {
+	padding: 15px 40px;
+	border-radius: 8px;
+	font-family: 'DM Sans';
+	font-size: 20px;
+  line-height: 130%;
+}
+
+@media screen and (max-width: 960px) {
+	.solutions {
+		padding: 20px 0;
+	}
+	.sols-cont {
+		margin: 50px 0;
+	}
+	.sols-text-right,
+	.sols-text-left {
+		padding: 0 5px;
+	}
+	.sols-title {
+		font-size: 26px;
+	}
+	.sols-info {
+		font-size: 14px;
+  }
+  .read-more-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+  }
+}
