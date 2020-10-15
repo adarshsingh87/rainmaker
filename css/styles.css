@@ -950,3 +950,22 @@ input {
 		margin: 20px 0;
 	}
 }
+
+.blog1 {
+	margin-top: 40px;
+}
+
+.blog-img {
+	float: right;
+}
+
+@media screen and (max-width: 960px) {
+	.blog-img {
+		float: none;
+		max-width: 100%;
+	}
+}
+
+p {
+	font-size: 18px;
+}
