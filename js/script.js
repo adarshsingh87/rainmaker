@@ -39,3 +39,21 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// ! form submit
+
+function submmitit() {
+	var xhttp = new XMLHttpRequest();
+	var formDataPair = []
+	var formData = ''
+	formDataPair.push('content1' + '=' + document.getElementById('fname').value);
+	formDataPair.push('content2' + '=' + document.getElementById('lname').value);
+	formDataPair.push('content3' + '=' + document.getElementById('phnumber').value);
+	formDataPair.push('content4' + '=' + document.getElementById('email').value);
+	formDataPair.push('content5' + '=' + document.getElementById('message').value);
+	formData = formDataPair.join( '&' ).replace( /%20/g, '+' );
+  xhttp.open( 'POST', 'https://rainmakerba.com/phpmailer/index.php' );
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send(formData);
+	console.log('submitted')
+}
