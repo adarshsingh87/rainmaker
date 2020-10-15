@@ -148,6 +148,7 @@ nav {
 .container-main {
 	width: 90%;
 	margin: auto;
+	max-width: 1440px;
 }
 
 .row,
@@ -315,11 +316,13 @@ nav {
 	}
 	.splash-title {
 		font-size: 27px;
+		text-align: center;
 	}
 	.get-started-btn {
-		padding: 10px 30px;
+		width: 100%;
+		padding: 20px 90px;
 		margin: 20px 0;
-		font-size: 14px;
+		font-size: 16px;
 	}
 	.heading-text {
 		font-size: 32px;
