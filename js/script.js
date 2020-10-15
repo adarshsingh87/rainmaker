@@ -38,7 +38,18 @@ function openCity(evt, cityName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+// document.getElementById("defaultOpen").click();
+const links = document.querySelectorAll('.tablinks')
+links[0].click()
+var clickVar = 1
+setInterval(() => {
+	links[clickVar].click();
+	if (clickVar < links.length - 1) {
+		clickVar++
+	} else {
+		clickVar = 0
+	}
+}, 2000) 
 
 // ! form submit
 
