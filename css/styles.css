@@ -614,6 +614,7 @@ nav {
 	height: 200px;
 	width: auto;
 	max-width: 100%;
+	margin: 5px 15px;
 }
 
 #Model_Deployment {
@@ -910,7 +911,7 @@ input {
 	align-content: center;
 }
 
-.top-info-block img{
+.top-info-block img {
 	margin-right: 20px;
 }
 
@@ -942,11 +943,11 @@ input {
 		height: 150px;
 	}
 	.form-submit-btn {
-	padding: 15px 50px;
-	border-radius: 18px;
-	margin-top: 20px;
-	align-self: center;
-}
+		padding: 15px 50px;
+		border-radius: 18px;
+		margin-top: 20px;
+		align-self: center;
+	}
 }
 
 @media screen and (max-width: 550px) {
@@ -954,7 +955,8 @@ input {
 		display: block;
 		margin-bottom: 20px;
 	}
-	.fname, .lname {
+	.fname,
+	.lname {
 		margin: 20px 0;
 	}
 }
