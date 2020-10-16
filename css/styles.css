@@ -178,6 +178,12 @@ nav {
 	color: #1c4670;
 }
 
+.splash-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .get-started-btn {
 	padding: 20px 70px;
 	border-radius: 32px;
@@ -186,6 +192,7 @@ nav {
 	line-height: 130%;
 	cursor: pointer;
 	margin: 60px 0;
+	width: 300px;
 }
 
 /* ! stylish heading */
