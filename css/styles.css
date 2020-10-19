@@ -750,6 +750,7 @@ input {
 }
 
 #message {
+	font-family: 'DM Sans';
 	background: #f2f2f2;
 	border-radius: 4px;
 	padding: 12px 0px 0px 12px;
