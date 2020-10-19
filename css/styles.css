@@ -24,8 +24,15 @@ a {
 .container-nav {
 	width: 85%;
 	margin: 0 auto;
+	position: sticky;
+	top: 0;
+	background: #fff;
 }
 /* ! navbar  */
+
+.active {
+	border-bottom: 2px solid #000;
+}
 
 nav {
 	display: flex;

@@ -14,11 +14,11 @@
         <a href="/"><img src="./vectors/logo.svg" alt="" /></a>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#solution">Solutions</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="./pages/contact.html" class="contact-us">Contact Us</a></li>
+        <li><a href="#splash" id="link-splash">Home</a></li>
+        <li><a href="#services" id="link-services">Services</a></li>
+        <li><a href="#solution" id="link-solution">Solutions</a></li>
+        <li><a href="#blog" id="link-blog">Blog</a></li>
+        <li><a href="#contact" class="contact-us" >Contact Us</a></li>
       </ul>
       <div class="burger">
         <div class="line1"></div>
@@ -28,7 +28,7 @@
   </div>
   <div class="container-main">
   <!-- ! splash -->
-    <div class="row splash">
+    <div class="row splash hero-bg" id="splash">
       <div class="col splash-text">
         <div class="splash-title">Transform organizations</div>
         <div class="splash-title">towards data-based</div>
@@ -45,7 +45,7 @@
     <div class="mission">“ Develop data-driven decision-making culture in companies that creates actionable intelligence for increased customer
     understanding and improved operations ”</div>
     <!-- ! services -->
-    <div class="heading" id="services">
+    <div class="heading hero-bg" id="services">
       <div class="heading-text">Our Services</div>
     </div>
     <div class="services">
@@ -119,7 +119,7 @@
     <div class="heading">
       <div class="heading-text">Technologies We Use</div>
     </div>
-    <div class='comp-cont' id="solution">
+    <div class='comp-cont'>
       <div class='tab-container'>
         <div class="tab">
           <button class="tablinks" onclick="openCity(event, 'Data_Engineering')" id="defaultOpen"><div class="tablink-cont">Data Engineering</div></button>
@@ -182,7 +182,7 @@
     </div>
     <!-- ! solutions -->
     <div class="heading solutions">
-      <div class="heading-text" id="solutions">Solutions</div>
+      <div class="heading-text hero-bg" id="solution">Solutions</div>
     </div>
     <div class="left-row sols-cont">
       <div class="col"><img src="./vectors/sols1.png" alt="" class="sols-img"></div>
@@ -235,7 +235,7 @@
       </div>
     </div>
     <div class="heading">
-      <div class="heading-text" id="blog">Some of our work</div>
+      <div class="heading-text hero-bg" id="blog">Some of our work</div>
     </div>
     <div class="soow-containter">
       <div class="soow-card">
@@ -276,17 +276,67 @@
       </div>
     </div>
     <!-- ! pen foorter -->
-    <div class="penultimate-footer">
-      <div class="pen-title">Don’t go away empty handed!</div>
-      <div class="pen-info">We create content regarding business analystic that helps business do something I am not sure what business can do with
-      this but I just wanna write some fancy words, I am a good freelancer I promise :)</div>
+    <div class="container-main hero-bg" id="contact">
+      <div class="contact-page-heading splash-title">GET IN TOUCH WITH US</div>
+      <p class="contact-page-heading">You will hear back from us within a 24 hours.</p>
+      <div class="form-cont">
+        <div class="form">
+          <div class="name-part">
+            <div class="fname">
+              <div class="input-heading">First Name</div>
+              <input type="text" placeholder="John" required id="fname">
+            </div>
+            <div class="lname">
+              <div class="input-heading">Last Name</div>
+              <input type="text" placeholder="Doer" required id="lname">
+            </div>
+          </div>
+          <div class="name-part">
+            <div class="fname">
+              <div class="input-heading">Phone Number</div>
+              <input type="text" placeholder="+91 1234567890" required id="phnumber">
+            </div>
+            <div class="lname">
+              <div class="input-heading">Email address</div>
+              <input type="email" placeholder="john@abc.com" required id="email">
+            </div>
+          </div>
+          <div class="input-heading">Message</div>
+          <textarea name="message" id="message" placeholder="Let us know how we can be helpful?"></textarea>
+          <div class="center-btn"><button class="form-submit-btn" onclick="submmitit()" type="submit">SUBMIT</button></div>
+        </div>
+        <div class="side-info">
+          <div class="top-info">
+            <div class="top-info-block">
+              <img src="../vectors/location.svg" alt="">
+              <div>
+                <div>6386 Spring St undefined Anchorage,</div>
+                <div>Georgia 12473 United States</div>
+              </div>
+            </div>
+            <div class="top-info-block">
+              <img src="../vectors/phone.svg" alt="">
+              <div>+968 9720 3900</div>
+            </div>
+            <div class="top-info-block">
+              <img src="../vectors/mail.svg" alt="">
+              <div>sales@rainmakerba.com</div>
+            </div>
+          </div>
+          <div class="bottom-info">
+            <img src="../vectors/twitterW.svg" alt="">
+            <img src="../vectors/facebookW.svg" alt="">
+            <img src="../vectors/linkeedinW.svg" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer-container">
     <div class="footer">
       <div class="footer1">
         <img src="./vectors/logo.svg" alt="">
-        <button onclick="location.href = './pages/contact.html'">Contact Us</button>
+        <button onclick="location.href = './#contact'">Contact Us</button>
       </div>
       <hr>
       <div class="footer2">
@@ -295,7 +345,7 @@
           <a href="#services" class="fotter-mid">Services</a>
           <a href="#solutions" class="fotter-mid">Solutions</a>
           <a href="#blog" class="fotter-mid">Blog</a>
-          <a href="./pages/contact.html" class="footer-end">Contact</a>
+          <a href="contact" class="footer-end">Contact</a>
         </div>
         <div class="footer-socials">
           <img src="./vectors/facebook.svg" alt="">
