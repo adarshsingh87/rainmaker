@@ -41,15 +41,15 @@ function openCity(evt, cityName) {
 // document.getElementById("defaultOpen").click();
 const links = document.querySelectorAll('.tablinks')
 links[0].click()
-// var clickVar = 1
-// setInterval(() => {
-// 	links[clickVar].click();
-// 	if (clickVar < links.length - 1) {
-// 		clickVar++
-// 	} else {
-// 		clickVar = 0
-// 	}
-// }, 2000) 
+var clickVar = 1
+setInterval(() => {
+	links[clickVar].click();
+	if (clickVar < links.length - 1) {
+		clickVar++
+	} else {
+		clickVar = 0
+	}
+}, 2000) 
 
 // ! form submit
 
@@ -69,6 +69,8 @@ function submmitit() {
 	console.log('submitted')
 }
 
+
+// spy scroll
 
 const makeNavLinksSmooth = ( ) => {
   const navLinks = document.querySelectorAll( '.nav-link' );

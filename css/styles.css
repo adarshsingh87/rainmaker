@@ -22,7 +22,7 @@ a {
 }
 
 .container-nav {
-	width: 85%;
+	width: 100%;
 	margin: 0 auto;
 	position: sticky;
 	top: 0;
@@ -35,6 +35,8 @@ a {
 }
 
 nav {
+	width: 85%;
+	margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -112,9 +114,8 @@ nav {
 	.burger {
 		display: block;
 	}
-	.container-nav {
+	nav {
 		width: 95%;
-		margin: 0 auto;
 	}
 }
 
@@ -607,139 +608,6 @@ nav {
 	}
 }
 
-#Data_Engineering img {
-	height: 300px;
-	width: auto;
-	max-width: 100%;
-}
-
-#Big_Data {
-	padding: 30px;
-}
-
-#Big_Data img {
-	height: 200px;
-	width: auto;
-	max-width: 100%;
-	margin: 5px 15px;
-}
-
-#Model_Deployment {
-	padding: 30px;
-}
-
-#Model_Deployment img {
-	height: 200px;
-	width: auto;
-	max-width: 100%;
-	margin: 20px;
-}
-
-#Analytic_Tools {
-	padding: 30px;
-}
-
-#Analytic_Tools img {
-	height: 150px;
-	width: auto;
-	max-width: 100%;
-	margin: 20px;
-}
-
-#Visualisation {
-	padding: 30px;
-}
-
-#Visualisation img {
-	height: 150px;
-	width: auto;
-	max-width: 100%;
-	margin: 20px;
-}
-
-#Data_Base {
-	padding: 30px;
-}
-
-#Data_Base img {
-	height: 150px;
-	width: auto;
-	max-width: 100%;
-	margin: 20px;
-}
-
-#Language {
-	padding: 30px;
-}
-
-#Language img {
-	height: 150px;
-	width: auto;
-	max-width: 100%;
-	margin: 20px;
-}
-
-@media screen and (max-width: 650px) {
-	#Data_Engineering img {
-		height: 100px;
-		width: auto;
-		max-width: 100%;
-	}
-	#Big_Data {
-		padding: 10px;
-	}
-	#Big_Data img {
-		height: 80px;
-		width: auto;
-		max-width: 100%;
-	}
-	#Model_Deployment {
-		padding: 10px;
-	}
-	#Model_Deployment img {
-		height: 75px;
-		width: auto;
-		max-width: 100%;
-		margin: 10px;
-	}
-	#Analytic_Tools {
-		padding: 5px;
-	}
-	#Analytic_Tools img {
-		height: 75px;
-		width: auto;
-		max-width: 100%;
-		margin: 5px;
-	}
-	#Visualisation {
-		padding: 5px;
-	}
-	#Visualisation img {
-		height: 75px;
-		width: auto;
-		max-width: 100%;
-		margin: 5px;
-	}
-	#Data_Base {
-		padding: 5px;
-	}
-	#Data_Base img {
-		height: 75px;
-		width: auto;
-		max-width: 100%;
-		margin: 5px;
-	}
-	#Language {
-		padding: 5px;
-	}
-	#Language img {
-		height: 75px;
-		width: auto;
-		max-width: 100%;
-		margin: 5px;
-	}
-}
-
 .footer-container {
 	padding: 30px 0;
 	background: #e7ecff;
@@ -985,4 +853,9 @@ input {
 
 p {
 	font-size: 18px;
+}
+
+.tabcontent img {
+	width: 100%;
+	height: 100%;
 }
