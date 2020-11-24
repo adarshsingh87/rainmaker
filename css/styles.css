@@ -843,6 +843,7 @@ input {
 
 .blog-img {
 	float: right;
+	max-width: 90%;
 }
 
 @media screen and (max-width: 960px) {

@@ -22,13 +22,13 @@ const navSlide = () => {
 	})
 	navLinksAncor.forEach((link) => {
 		link.addEventListener('click', () => {
-			nav.classList.remove( 'nav-active' )
+			nav.classList.remove('nav-active')
 			navLinks.forEach((link, index) => {
 				if (link.style.animation) {
 					link.style.animation = ''
 				}
 			})
-			burger.classList.remove( 'toggle' )
+			burger.classList.remove('toggle')
 		})
 	})
 }
@@ -81,6 +81,10 @@ function submmitit() {
 	xhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
 	xhttp.send(formData)
 	console.log('submitted')
+	document.querySelector('.form-submit-btn').innerHTML = 'Submitted'
+	setTimeout(() => {
+		window.location.reload()
+	}, 1000)
 }
 
 // spy scroll
@@ -123,3 +127,5 @@ const spyScrolling = () => {
 
 makeNavLinksSmooth()
 spyScrolling()
+
+// made by @adarshsingh87
